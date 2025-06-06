@@ -1,4 +1,4 @@
-name: testing-workflows
+ name: testing-workflows
 
 on:
   pull_request:
@@ -14,4 +14,4 @@ jobs:
 
       - name: Print file contents
         run: |
-          cat example.txt
+          echo ${{ github.action_path }}
