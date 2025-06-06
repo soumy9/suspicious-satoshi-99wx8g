@@ -16,4 +16,4 @@ jobs:
 
       - name: Print file contents
         run: |
-          cat ${{ github.action_path }}/settings.xml
+          cat $GITHUB_WORKSPACE/.github/workflows/settings.xml
